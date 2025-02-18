@@ -16,4 +16,5 @@ string = "jajaaj"
 char = 'a'
 bool = true //false
 null = null
+Symbol  = Symbol(unico)
 console.log("Hola, [javaScript]")
