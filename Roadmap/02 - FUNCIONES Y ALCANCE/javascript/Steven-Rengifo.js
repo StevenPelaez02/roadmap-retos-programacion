@@ -31,16 +31,24 @@ console.log(local) //esta no se deberia mostrar ya que como es local y al estar 
 console.log(global) //esta de lo contrario no importa donde se declare siempre va a funcionar
 
 const numeros = (para1, para2) =>{
-    
+    let cont = 0
     for(let i = 1; i <= 100; i++){
+
         if((i % 3) === 0){
-            console.log(para1)
+            document.write(para1 + "<br>")
         }
         else if((i % 5) === 0){
-            console.log(para2)
+            document.write(para2 + "<br>")
         }
-        else if(((i % 3) === 0) && ((i % 5) === 0))
-            console.log(para1 + para2)
-    }
-    return x
+        else if(((i % 3) === 0) && ((i % 5) === 0)){
+            document.write(para1 + para2 + "<br>")
+        }else {
+            document.write(i + "<br>")
+            cont++
+        }
+    } 
+    return cont
 }
+let para1 = "steven"
+let para2 = "Steven2"
+numeros(para1, para2)
